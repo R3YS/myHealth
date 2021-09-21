@@ -18,7 +18,7 @@
 
 ## 📋 Requirements
 
-Seeing as React Native apps may target iOS 11.0 and Android 5.0 (API 21) or newer, this should beb the standardized mobile OS requirements when interacting with the myHealth product.
+Seeing as React Native apps may target iOS 11.0 and Android 5.0 (API 21) or newer, this should be the standardized mobile OS requirements when interacting with the myHealth product.
 
 ## 📖 Documentation
 
