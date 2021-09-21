@@ -12,7 +12,7 @@
 
 - [Requirements](#-requirements)
 - [Documentation](#-documentation)
-- [CSUSB Software Engineers](#-csusb-software-engineers)
+- [CSUSB Software Engineers](#csusb-software-engineers)
 - [Upgrading](#-upgrading)
 
 
