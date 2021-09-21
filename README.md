@@ -1,9 +1,9 @@
 <h1 align="center">
-    React Native
+    myHealth
   </a>
 </h1>
 
 <p align="center">
-  <strong>Learn once, write anywhere:</strong><br>
-  Build mobile apps with React.
+  <strong>Your Health, Personalized:</strong><br>
+  Track your Lifestyle, in the palm of your hand.
 </p>
