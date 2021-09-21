@@ -11,14 +11,18 @@
 ## Contents
 
 - [Requirements](#-requirements)
-- [Building your first React Native app](#-building-your-first-react-native-app)
 - [Documentation](#-documentation)
 - [Upgrading](#-upgrading)
-- [How to Contribute](#-how-to-contribute)
-- [Code of Conduct](#code-of-conduct)
-- [License](#-license)
 
 
 ## 📋 Requirements
 
-React Native apps may target iOS 11.0 and Android 5.0 (API 21) or newer. You may use Windows, macOS, or Linux as your development operating system, though building and running iOS apps is limited to macOS. Tools like [Expo](https://expo.io) can be used to work around this.
+Seeing as React Native apps may target iOS 11.0 and Android 5.0 (API 21) or newer, this should beb the standardized mobile OS requirements when interacting with the myHealth product.
+
+## 📖 Documentation
+
+The full documentation for myHealth can be found on the main branch of our GitHub repository.
+
+## 🚀 Upgrading
+
+Upgrading to new versions of React Native may give you access to more APIs, views, developer tools, and other goodies. See the [Upgrading Guide][u] for instructions.
