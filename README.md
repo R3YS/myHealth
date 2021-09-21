@@ -25,4 +25,4 @@ The full documentation for myHealth can be found on the main branch of our GitHu
 
 ## 🚀 Upgrading
 
-Upgrading to new versions of React Native may give you access to more APIs, views, developer tools, and other goodies. See the [Upgrading Guide][u] for instructions.
+Upgrading to new versions of myHealth will allow for interaction with the latest features implemented into myHealth.
