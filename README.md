@@ -1,32 +1,43 @@
-<h1 align="center">
-    myHealth
-  </a>
-</h1>
+This project was created with [BuilderX](https://builderx.io/).
 
-<p align="center">
-  <strong>Your Health, Personalized:</strong><br>
-  Track your Lifestyle, in the palm of your hand.
-</p>
+## BuilderX uses third party libraries for some of the react-native components such as
 
-## Contents
+```
+@builderx/utils@0.1.6
+lodash
+react-navigation@4.0.10
+react-native-svg
+react-native-maps
+```
 
-- [Requirements](#-requirements)
-- [Documentation](#-documentation)
-- [CSUSB Software Engineers](#csusb-software-engineers)
-- [Upgrading](#-upgrading)
+These packages are included as dependencies in package.json file
 
-## 📋 Requirements
+## Steps to run project
 
-Seeing as React Native apps may target iOS 11.0 and Android 5.0 (API 21) or newer, this should be the standardized mobile OS requirements when interacting with the myHealth product.
+In the project directory, you can run:
 
-## 📖 Documentation
+### `yarn` or `npm install`
 
-The full documentation for myHealth can be found on the main branch of our GitHub repository.
+This will add the dependencies required to run the project.
 
-## 🚀 Upgrading
+### `yarn start` or `npm start`
 
-Upgrading to new versions of myHealth will allow for interaction with the latest features implemented into myHealth.
+This will start the project.
 
-## CSUSB Software Engineers
+**Note: BuilderX generates Expo project at the moment, if you want to add custom fonts in your create-react-native-app project please refer these steps**
 
-This entire project is being developed using Facebook's React Native tool in order to develop an application that supports both major mobile operating systems. Uploaded to this repository are all React Native files for the myHealth application EXCLUDING the 'node-modules' folder as that is to be maintained locally on your development environment. After setting up your development environment, please proceed to create a blank project named 'myHealth' and search for the directory it created. Replace the files, with the ones from the repository and test in order to confirm we are all setup. If you have any issues please use our Discord or Slack channels in order to communicate.
+1. Add Fonts to an "assets/fonts" folder in the root of your project.
+2. Add rnpm to package.json providing the path to the font files:
+
+```
+"rnpm": {
+  "assets": [
+    "./assets/fonts/"
+  ]
+}
+```
+
+3. Run react-native link
+
+##### This should add your custom fonts in the react native project.
+
