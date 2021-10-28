@@ -5,19 +5,17 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import AppLoading from "expo-app-loading";
 
 import * as Font from "expo-font";
-import Activity from "./src/screens/Activity";
-import Diet from "./src/screens/Diet";
 import Introduce from "./src/screens/Introduce";
-import Settings from "./src/screens/Settings";
-import Summary from "./src/screens/Summary";
+import Diet from "./src/screens/Diet";
+import Activity from "./src/screens/Activity";
 import WelcomePage from "./src/screens/WelcomePage";
+import Settings from "./src/screens/Settings";
 
 const DrawerNavigation = createDrawerNavigator({
   Introduce: Introduce,
-  WelcomePage: WelcomePage,
   Diet: Diet,
   Activity: Activity,
-  Summary: Summary,
+  WelcomePage: WelcomePage,
   Settings: Settings
 });
 
@@ -27,10 +25,9 @@ const StackNavigation = createStackNavigator(
       screen: DrawerNavigation
     },
     Introduce: Introduce,
-    WelcomePage: WelcomePage,
     Diet: Diet,
     Activity: Activity,
-    Summary: Summary,
+    WelcomePage: WelcomePage,
     Settings: Settings
   },
   {
