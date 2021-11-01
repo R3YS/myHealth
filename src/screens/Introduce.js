@@ -15,29 +15,30 @@ function Introduce(props) {
       <ImageBackground
         source={require("../assets/images/background.jpg")}
         resizeMode="contain"
-        style={styles.image}
-        imageStyle={styles.image_imageStyle}
+        style={styles.background}
+        imageStyle={styles.background_imageStyle}
       >
-        <View style={styles.textInputColumn}>
+        <View style={styles.nameColumn}>
           <TextInput
             placeholder="What's your name?"
-            style={styles.textInput}
+            dataDetector="none"
+            style={styles.name}
           ></TextInput>
           <TextInput
             placeholder="How much do you currently weigh?"
-            style={styles.textInput2}
+            style={styles.weight}
           ></TextInput>
           <TextInput
             placeholder="How tall are you?"
-            style={styles.textInput3}
+            style={styles.howtall}
           ></TextInput>
           <TextInput
             placeholder="When is your birthday? (optional)"
-            style={styles.textInput4}
+            style={styles.birthday}
           ></TextInput>
           <TouchableOpacity
             onPress={() => props.navigation.navigate("WelcomePage")}
-            style={styles.button}
+            style={styles.nextbutton}
           >
             <Text style={styles.next}>Next</Text>
           </TouchableOpacity>
@@ -53,14 +54,14 @@ const styles = StyleSheet.create({
     flex: 1,
     borderRadius: 15
   },
-  image: {
+  background: {
     width: 744,
     height: 1162,
     marginTop: -67,
     marginLeft: -87
   },
-  image_imageStyle: {},
-  textInput: {
+  background_imageStyle: {},
+  name: {
     fontFamily: "roboto-500",
     color: "#121212",
     textAlign: "center",
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     height: 72,
     width: 322
   },
-  textInput2: {
+  weight: {
     fontFamily: "roboto-500",
     color: "#121212",
     textAlign: "center",
@@ -85,9 +86,9 @@ const styles = StyleSheet.create({
     width: 322,
     height: 72,
     alignSelf: "flex-end",
-    marginTop: 25
+    marginTop: 26
   },
-  textInput3: {
+  howtall: {
     fontFamily: "roboto-500",
     color: "#121212",
     textAlign: "center",
@@ -100,7 +101,7 @@ const styles = StyleSheet.create({
     width: 322,
     marginTop: 19
   },
-  textInput4: {
+  birthday: {
     fontFamily: "roboto-500",
     color: "rgba(0,0,0,1)",
     textAlign: "center",
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     marginLeft: 3
   },
-  button: {
+  nextbutton: {
     backgroundColor: "rgba(0,0,0,0.7)",
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.7)",
@@ -132,8 +133,8 @@ const styles = StyleSheet.create({
     marginTop: 23,
     marginLeft: 143
   },
-  textInputColumn: {
-    marginTop: 218,
+  nameColumn: {
+    marginTop: 217,
     marginLeft: 106,
     marginRight: 313
   },
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
     fontSize: 36,
     textAlign: "center",
     flex: 1,
-    marginBottom: 965,
+    marginBottom: 945,
     marginTop: -507,
     marginLeft: 82,
     marginRight: 292

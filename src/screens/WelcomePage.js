@@ -27,7 +27,7 @@ function WelcomePage(props) {
             style={styles.image}
             imageStyle={styles.image_imageStyle}
           >
-            <Text style={styles.goodMorningJoe}>Good Morning Joe!</Text>
+            <Text style={styles.welcomeUser}>Welcome User!</Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate("Summary")}
               style={styles.button2}
@@ -48,45 +48,45 @@ function WelcomePage(props) {
             <View style={styles.rect4Stack}>
               <View style={styles.rect4}>
                 <Text style={styles.loremIpsum2}>
-                  What&#39;s next Joe? Daily To-Do List
+                  What&#39;s next? Daily To-Do List
                 </Text>
               </View>
-              <View style={styles.rect7}>
+              <View style={styles.bottombar}>
                 <View style={styles.stackFiller}></View>
                 <View style={styles.groupStack}>
                   <View style={styles.group}>
                     <MaterialCommunityIconsIcon
                       name="food-apple"
-                      style={styles.icon5}
+                      style={styles.dieticon}
                     ></MaterialCommunityIconsIcon>
                     <MaterialIconsIcon
                       name="directions-bike"
-                      style={styles.icon2}
+                      style={styles.bikeicon}
                     ></MaterialIconsIcon>
                     <EntypoIcon
                       name="area-graph"
-                      style={styles.icon3}
+                      style={styles.summaryicon}
                     ></EntypoIcon>
                     <IoniconsIcon
                       name="md-settings"
-                      style={styles.icon4}
+                      style={styles.settingicon}
                     ></IoniconsIcon>
                   </View>
                   <TouchableOpacity
                     onPress={() => props.navigation.navigate("Diet")}
-                    style={styles.button5}
+                    style={styles.dietbutton}
                   ></TouchableOpacity>
                   <TouchableOpacity
                     onPress={() => props.navigation.navigate("Activity")}
-                    style={styles.button6}
+                    style={styles.bikebutton}
                   ></TouchableOpacity>
                   <TouchableOpacity
-                    onPress={() => props.navigation.navigate("Summary")}
-                    style={styles.button7}
+                    onPress={() => props.navigation.navigate("WelcomePage")}
+                    style={styles.summarybutton}
                   ></TouchableOpacity>
                   <TouchableOpacity
                     onPress={() => props.navigation.navigate("Settings")}
-                    style={styles.button8}
+                    style={styles.settingbutton}
                   ></TouchableOpacity>
                 </View>
               </View>
@@ -102,12 +102,6 @@ function WelcomePage(props) {
               style={styles.button3}
             >
               <Text style={styles.diet}>Diet</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => props.navigation.navigate("Settings")}
-              style={styles.button4}
-            >
-              <Text style={styles.settings}>Settings</Text>
             </TouchableOpacity>
           </ImageBackground>
         </ScrollView>
@@ -134,7 +128,7 @@ const styles = StyleSheet.create({
     marginLeft: -624
   },
   image_imageStyle: {},
-  goodMorningJoe: {
+  welcomeUser: {
     fontFamily: "roboto-500",
     color: "#121212",
     fontSize: 36,
@@ -210,12 +204,12 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginLeft: 10
   },
-  rect7: {
+  bottombar: {
     left: 0,
     height: 70,
     position: "absolute",
     backgroundColor: "rgba(0,0,0,1)",
-    bottom: 10,
+    bottom: 0,
     right: 0
   },
   stackFiller: {
@@ -230,23 +224,23 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     bottom: 15
   },
-  icon5: {
+  dieticon: {
     color: "rgba(255,255,255,1)",
     fontSize: 40
   },
-  icon2: {
+  bikeicon: {
     color: "rgba(255,255,255,1)",
     fontSize: 40
   },
-  icon3: {
+  summaryicon: {
     color: "rgba(255,255,255,1)",
     fontSize: 40
   },
-  icon4: {
+  settingicon: {
     color: "rgba(255,255,255,1)",
     fontSize: 40
   },
-  button5: {
+  dietbutton: {
     left: 0,
     width: 90,
     height: 70,
@@ -255,7 +249,7 @@ const styles = StyleSheet.create({
     opacity: 0,
     bottom: 0
   },
-  button6: {
+  bikebutton: {
     left: 96,
     width: 90,
     height: 70,
@@ -264,7 +258,7 @@ const styles = StyleSheet.create({
     opacity: 0,
     bottom: 0
   },
-  button7: {
+  summarybutton: {
     left: 191,
     width: 85,
     height: 70,
@@ -273,7 +267,7 @@ const styles = StyleSheet.create({
     opacity: 0,
     bottom: 0
   },
-  button8: {
+  settingbutton: {
     left: 276,
     width: 84,
     height: 70,
@@ -286,7 +280,7 @@ const styles = StyleSheet.create({
     height: 70
   },
   rect4Stack: {
-    height: 130,
+    height: 140,
     marginTop: 20,
     marginLeft: 624,
     marginRight: 866
@@ -296,7 +290,7 @@ const styles = StyleSheet.create({
     height: 130,
     backgroundColor: "rgba(106,117,129,0.5)",
     borderRadius: 15,
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: 664
   },
   weeklyReport: {
@@ -335,22 +329,6 @@ const styles = StyleSheet.create({
     fontFamily: "roboto-regular",
     color: "#121212",
     width: 30,
-    height: 18,
-    marginTop: 10,
-    marginLeft: 10
-  },
-  button4: {
-    width: 280,
-    height: 130,
-    backgroundColor: "rgba(220,225,30,0.5)",
-    borderRadius: 15,
-    marginTop: 20,
-    marginLeft: 664
-  },
-  settings: {
-    fontFamily: "roboto-regular",
-    color: "#121212",
-    width: 53,
     height: 18,
     marginTop: 10,
     marginLeft: 10

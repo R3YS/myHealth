@@ -5,24 +5,18 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import AppLoading from "expo-app-loading";
 
 import * as Font from "expo-font";
-import Activity from "./src/screens/Activity";
-import Diet from "./src/screens/Diet";
 import Introduce from "./src/screens/Introduce";
-import Settings from "./src/screens/Settings";
-import Summary from "./src/screens/Summary";
-import Untitled from "./src/screens/Untitled";
+import Diet from "./src/screens/Diet";
+import Activity from "./src/screens/Activity";
 import WelcomePage from "./src/screens/WelcomePage";
-import WorkoutEntry from "./src/screens/WorkoutEntry";
+import Settings from "./src/screens/Settings";
 
 const DrawerNavigation = createDrawerNavigator({
-  Activity: Activity,
-  Diet: Diet,
   Introduce: Introduce,
-  Settings: Settings,
-  Summary: Summary,
-  Untitled: Untitled,
+  Diet: Diet,
+  Activity: Activity,
   WelcomePage: WelcomePage,
-  WorkoutEntry: WorkoutEntry
+  Settings: Settings
 });
 
 const StackNavigation = createStackNavigator(
@@ -30,14 +24,11 @@ const StackNavigation = createStackNavigator(
     DrawerNavigation: {
       screen: DrawerNavigation
     },
-    Activity: Activity,
-    Diet: Diet,
     Introduce: Introduce,
-    Settings: Settings,
-    Summary: Summary,
-    Untitled: Untitled,
+    Diet: Diet,
+    Activity: Activity,
     WelcomePage: WelcomePage,
-    WorkoutEntry: WorkoutEntry
+    Settings: Settings
   },
   {
     headerMode: "none"
@@ -64,8 +55,8 @@ async function loadResourcesAsync() {
   await Promise.all([
     Font.loadAsync({
       "roboto-regular": require("./src/assets/fonts/roboto-regular.ttf"),
-      "roboto-500": require("./src/assets/fonts/roboto-500.ttf"),
-      "roboto-700": require("./src/assets/fonts/roboto-700.ttf")
+      "roboto-700": require("./src/assets/fonts/roboto-700.ttf"),
+      "roboto-500": require("./src/assets/fonts/roboto-500.ttf")
     })
   ]);
 }
