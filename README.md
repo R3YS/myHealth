@@ -1,6 +1,12 @@
 This project was created with React Native Expo (https://expo.dev)
 This project was created with [BuilderX](https://builderx.io/).
 
+<h1 align="center">
+  <a href="https://reactnative.dev/">
+    React Native
+  </a>
+</h1>
+
 
 ## BuilderX uses third party libraries for some of the react-native components such as
 
