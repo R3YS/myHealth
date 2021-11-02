@@ -2,8 +2,8 @@ This project was created with React Native Expo (https://expo.dev)
 This project was created with [BuilderX](https://builderx.io/).
 
 <h1 align="center">
-  <a href="https://reactnative.dev/">
-    React Native
+  <a href="https://github.com/R3YS/myHealth.git">
+    myHealth
   </a>
 </h1>
 
