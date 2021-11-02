@@ -1,4 +1,6 @@
+This project was created with React Native Expo (https://expo.dev)
 This project was created with [BuilderX](https://builderx.io/).
+
 
 ## BuilderX uses third party libraries for some of the react-native components such as
 
@@ -11,6 +13,8 @@ react-native-maps
 ```
 
 These packages are included as dependencies in package.json file
+
+## Please follow instructions to launch project.
 
 ## Steps to run project
 
